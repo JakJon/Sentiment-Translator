@@ -1,0 +1,25 @@
+﻿<Window x:Class="JakeTranslator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JakeTranslator"
+        mc:Ignorable="d"
+        Title="Translator" Height="350" Width="525" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Label x:Name="label" Content="Jake Jones' Translator&#xD;&#xA;" HorizontalAlignment="Left" Margin="39,6,0,0" VerticalAlignment="Top" Height="49" FontSize="26.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textToTranslate" Height="52" Margin="42,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451" FontSize="14" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+        <Label x:Name="EnterTextLabel" Content="Enter text to translate" HorizontalAlignment="Left" Margin="39,53,0,0" VerticalAlignment="Top" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="selectLabel" Content="Select a language to translate to:" Margin="107,142,198,0" VerticalAlignment="Top" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Button x:Name="translateButton" Content="Translate" Margin="39,187,0,0" VerticalAlignment="Top" Width="114" Height="30" Click="translateButton_Click" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="LanguageComboBox" 
+                  Margin="328,147,77,0" 
+                  VerticalAlignment="Top" 
+                  Width="112" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="SentimentText" Margin="35,254,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="SentimentButton" Content="Get Sentiment" Height="30" Margin="39,229,0,0" VerticalAlignment="Top" Width="87" Click="SentimentButton_Click" RenderTransformOrigin="0.54,0.7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+        <Button x:Name="btnHelp" Content="?" Height="30" Margin="135,230,0,0" VerticalAlignment="Top" Width="18" Click="btnHelp_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="Translationtb" Height="116" Margin="161,178,0,0" TextWrapping="Wrap" Text="Translation" Width="332" RenderTransformOrigin="-2.183,3.304" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+    </Grid>
+</Window>
